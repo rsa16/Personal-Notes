@@ -12,7 +12,6 @@
   "obsidian-projects",
   "settings-search",
   "obsidian-tasks-plugin",
-  "frontmatter-modified-date",
   "dataview",
   "templater-obsidian",
   "quickadd",
@@ -20,5 +19,15 @@
   "highlightr-plugin",
   "obsidian-lock-screen-plugin",
   "obsidian-trash-explorer",
-  "obsidian-latex-suite"
+  "obsidian-latex-suite",
+  "better-word-count",
+  "table-editor-obsidian",
+  "obsidian-excalidraw-plugin",
+  "excalibrain",
+  "obsidian-git",
+  "homepage",
+  "obsidian-kanban",
+  "tray",
+  "surfing",
+  "obsidian-icon-folder"
 ]

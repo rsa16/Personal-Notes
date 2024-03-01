@@ -1,20 +1,16 @@
 ---
 noteType: goal
-area: Dummy
-tags:
-  - goal
-progress: 50
+area: Test
+tags: goal
+progress: 0
 target: 100
-startDate: 2024-01-01
+startDate: 2024-02-27
 deadline: 2024-02-29
-completionDate: 2024-02-20
-completed: true
+completionDate: 
+completed: false
 banner: https://images.unsplash.com/photo-1633158834806-766387547d2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAwOTd8MHwxfHNlYXJjaHwxM3x8Z29hbHxlbnwwfDB8fHwxNzA4MTUzODc3fDA&ixlib=rb-4.0.3&q=80&w=1080
-modified_at: 2024-02-17T12:42:36+05:30
+created_at: 2024-02-27T19:55:59-05:00
 ---
-
-
-
 
 >[!multi-column]
 >

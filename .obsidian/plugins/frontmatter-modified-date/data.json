@@ -4,7 +4,7 @@
   "excludedFolders": [
     "Templates"
   ],
-  "useKeyupEvents": false,
+  "useKeyupEvents": true,
   "onlyUpdateExisting": true,
   "timeout": 10,
   "excludeField": "exclude_modified_update",

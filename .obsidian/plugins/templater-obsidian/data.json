@@ -28,5 +28,5 @@
   "startup_templates": [
     "Templates/startup template.md"
   ],
-  "enable_ribbon_icon": false
+  "enable_ribbon_icon": true
 }

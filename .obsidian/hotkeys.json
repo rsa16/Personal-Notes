@@ -74,5 +74,41 @@
       ],
       "key": "Q"
     }
+  ],
+  "periodic-notes:open-daily-note": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "D"
+    }
+  ],
+  "periodic-notes:open-weekly-note": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "W"
+    }
+  ],
+  "editor:toggle-source": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "S"
+    }
+  ],
+  "obsidian-trash-explorer:empty-trash": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "E"
+    }
   ]
 }

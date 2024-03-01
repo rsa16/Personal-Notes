@@ -6,5 +6,5 @@ tags:
   - favorite
 ---
 ```dataviewjs
-await dv.view("Scripts/dvScripts/taskido", {pages: "", view: "month", firstDayOfWeek: "1", options: "style1"})
+await dv.view("Scripts/dvScripts/taskido", {pages: "", dailyNoteFolder: "Tasks/"})
 ```

@@ -53,7 +53,7 @@ date: <% tp.file.title %>
 **Dear Diary**,
 
 
-*Ashutosh Thakur*
+*Rehan Ali*
 
 ---
 

@@ -20,6 +20,6 @@ modified_at: 2024-02-27T12:28:52+05:30
 >>[!info]+ Remark
 >> The distance of a point $M(x_{0},y_{0})$ from origin $O(0,0)$ $OM=\sqrt{(x_{0}^{2}+y_{0}^{2})}$ 
 
-## 2. Section Formulae
+## 2. Section Formulae[[Drawing 2024-02-27 21.22.49.excalidraw]]
 
 ![[section formula proof.png#invert_B]]

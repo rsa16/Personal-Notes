@@ -8,6 +8,7 @@ startDate:
 deadline: 
 completionDate: 
 completed: false
+banner: https://images.unsplash.com/photo-1633158834806-766387547d2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjAwOTd8MHwxfHNlYXJjaHwxM3x8Z29hbHxlbnwwfDB8fHwxNzA4MTUzODc3fDA&ixlib=rb-4.0.3&q=80&w=1080
 created_at: <% tp.file.creation_date('YYYY-MM-DD[T]HH:mm:ssZ') %>
 <% '---' %>
 

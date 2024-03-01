@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a11a1ccc7228f300",
+            "id": "54cbcd1e8ecf477f",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -33,19 +33,46 @@
             }
           },
           {
-            "id": "d2f64d53894e268b",
+            "id": "8c4be65144f5c4c5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/🔢 Dummy Maths Note.md",
+                "file": "Journal/2024/2024-Q1/February, 2024/2024-W09/2024-02-29.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "af9aca980acb4327",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tasks/General Tasks.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
+          },
+          {
+            "id": "7fac8fe240319a23",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -105,12 +132,21 @@
               "type": "bookmarks",
               "state": {}
             }
+          },
+          {
+            "id": "cf84760cc01fdb70",
+            "type": "leaf",
+            "state": {
+              "type": "surfing-tab-tree",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 217
+    "width": 279.5
   },
   "right": {
     "id": "01c80885edef377f",
@@ -127,6 +163,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "000 Pinned/🏠 Homepage.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -149,7 +186,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.4682213077274803,
+                  "scale": 0.33397076987900437,
                   "close": true
                 }
               }
@@ -161,6 +198,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "000 Pinned/🏠 Homepage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,9 +226,18 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "000 Pinned/🏠 Homepage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
+            }
+          },
+          {
+            "id": "20d6e82b916748de",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
             }
           }
         ]
@@ -213,7 +260,9 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {}
+              "state": {
+                "file": "000 Pinned/🏠 Homepage.md"
+              }
             }
           },
           {
@@ -221,7 +270,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "000 Pinned/🏠 Homepage.md"
+              }
             }
           },
           {
@@ -252,6 +303,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "homepage:Open homepage": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "command-palette:Open command palette": false,
@@ -259,49 +311,54 @@
       "dbfolder:Create a new database table": false,
       "obsidian-projects:Open projects": false,
       "obsidian-trash-explorer:Open trash explorer": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "templater-obsidian:Templater": false,
       "periodic-notes:Open today": false
     }
   },
-  "active": "a11a1ccc7228f300",
+  "active": "bcb2c5231acf380b",
   "lastOpenFiles": [
     "🙃 Sidebar.md",
-    "Maths/🔢 Dummy Maths Note.md",
-    "Attachments/section formula proof.png",
     "000 Pinned/🏠 Homepage.md",
+    "Untitled.md",
+    "README.md",
+    "000 Pinned/📋 Tasks Dashboard.md",
+    "Tasks/General Tasks.md",
+    "Journal/2024/2024-Q1/February, 2024/2024-W09/2024-02-29.md",
+    "Tasks/Untitled.md",
+    "Excalidraw/Drawing 2024-02-27 21.22.49.excalidraw.md",
+    "Maths/🔢 Dummy Maths Note.md",
+    "001 Goals/Get Better.md",
+    "Attachments/section formula proof.png",
+    "Journal/2024/2024-Q1/February, 2024/2024-W09/2024-02-28.md",
     "Attachments/distance formula.png",
+    "001 Goals/Dummy Goal.md",
+    "Journal/🗓️ Journal.md",
+    "👤 Personal.md",
+    "💼 Productivity.md",
+    "Journal/2024/2024-Q1/February, 2024/February, 2024.md",
+    "Journal/2024/2024-Q1/2024-Q1.md",
+    "Journal/2024/2024.md",
+    "Journal/2024/2024-Q1/February, 2024/2024-W09/2024-W09.md",
+    "000 Pinned/🗄️ Goals Dashboard.md",
+    "000 Pinned/🗓️ Tasks Calendar.md",
+    "Journal/2024/2024-Q1/February, 2024/2024-W09/2024-02-27.md",
+    "2024-02-28.md",
+    "Journal/2024-02-28.md",
+    "Tasks",
+    "Scripts/dvScripts/taskido/view.js",
+    "Scripts/dvScripts/taskido/view.css",
+    "Templates/Journals/Daily Note Template.md",
+    "Excalidraw",
+    "Journal/2024/2024-Q1/February, 2024/2024-W09",
+    "qr.png",
     "Attachments",
     "Maths",
-    "README.md",
-    "🛠️ Practice.md",
-    "🧰 Utilities.md",
-    "🧠 Excalibrain.md",
-    "📺 Anime.md",
-    "📥 Inputs.md",
-    "💼 Productivity.md",
-    "👤 Personal.md",
-    "Templates/startup template.md",
-    "001 Goals/my goal.md",
-    "Templates/Goal Template.md",
-    "Templates/Default Template.md",
-    "Templates/Journals/Daily Note Template.md",
-    "Templates/Journals/Monthly Note Template.md",
-    "Templates/Insertion Template/Callout Template.md",
-    "Templates/Input Template/Anime Template.md",
-    "Journal/2024/2024.md",
-    "Journal/2024/2024-Q1/2024-Q1.md",
-    "Journal/2024/2024-Q1/February, 2024/February, 2024.md",
-    "Journal/2024/2024-Q1/February, 2024/2024-W07/2024-W07.md",
-    "Journal/2024/2024-Q1/February, 2024/2024-W07/2024-02-17.md",
     "Journal/2024/2024-Q1/February, 2024/2024-W07",
     "Journal/2024/2024-Q1/February, 2024",
     "Journal/2024/2024-Q1",
-    "Journal/2024",
-    "Journal/🗓️ Journal.md",
-    "000 Goals",
-    "000 Quick Notes",
     "Pasted image 20240212222426.png",
-    "Attachment Notes",
-    "Attachment Notes/Untitled",
     "Pasted image 20240206143632.png"
   ]
 }
