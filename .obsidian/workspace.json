@@ -10,35 +10,18 @@
           {
             "id": "54cbcd1e8ecf477f",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "graph",
-              "state": {},
-              "pinned": true
+              "state": {}
             }
           },
           {
-            "id": "bcb2c5231acf380b",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "000 Pinned/🏠 Homepage.md",
-                "mode": "preview",
-                "backlinks": false,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "8c4be65144f5c4c5",
+            "id": "cb18cc093fe3000b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Journal/2024/2024-Q1/February, 2024/2024-W09/2024-02-29.md",
+                "file": "Journal/2024/2024.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": false
@@ -46,26 +29,13 @@
             }
           },
           {
-            "id": "af9aca980acb4327",
+            "id": "b96d6293a39b4b88",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tasks/General Tasks.md",
+                "file": "Tasks/TODO.md",
                 "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7fac8fe240319a23",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "preview",
                 "backlinks": false,
                 "source": false
               }
@@ -134,7 +104,7 @@
             }
           },
           {
-            "id": "cf84760cc01fdb70",
+            "id": "ba0872f590fadc36",
             "type": "leaf",
             "state": {
               "type": "surfing-tab-tree",
@@ -163,7 +133,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "000 Pinned/🏠 Homepage.md",
+                "file": "Journal/2024/2024.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -186,7 +156,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.33397076987900437,
+                  "scale": 0.6564382658082918,
                   "close": true
                 }
               }
@@ -198,7 +168,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "000 Pinned/🏠 Homepage.md",
+                "file": "Journal/2024/2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -226,7 +196,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "000 Pinned/🏠 Homepage.md",
+                "file": "Journal/2024/2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -248,20 +218,12 @@
         "dimension": 52.62430939226519,
         "children": [
           {
-            "id": "ff59cc13c77c5914",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
             "id": "e75b94f8566f2d9a",
             "type": "leaf",
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "000 Pinned/🏠 Homepage.md"
+                "file": "Journal/2024/2024.md"
               }
             }
           },
@@ -271,7 +233,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "000 Pinned/🏠 Homepage.md"
+                "file": "Journal/2024/2024.md"
               }
             }
           },
@@ -288,24 +250,28 @@
             }
           },
           {
-            "id": "d470cddf1c34f88c",
+            "id": "35a2946937832701",
             "type": "leaf",
             "state": {
-              "type": "trash-explorer",
+              "type": "calendar",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 280
+    "width": 363.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "homepage:Open homepage": false,
       "switcher:Open quick switcher": false,
+      "homepage:Open homepage": false,
+      "periodic-notes:Open today": false,
+      "obsidian-day-planner:Timeline": false,
       "graph:Open graph view": false,
+      "templater-obsidian:Templater": false,
       "command-palette:Open command palette": false,
       "workspaces:Manage workspace layouts": false,
       "dbfolder:Create a new database table": false,
@@ -313,51 +279,51 @@
       "obsidian-trash-explorer:Open trash explorer": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "templater-obsidian:Templater": false,
-      "periodic-notes:Open today": false
+      "obsidian42-brat:BRAT": false,
+      "spotify-link:Connect Spotify": false
     }
   },
-  "active": "bcb2c5231acf380b",
+  "active": "cb18cc093fe3000b",
   "lastOpenFiles": [
-    "🙃 Sidebar.md",
-    "000 Pinned/🏠 Homepage.md",
-    "Untitled.md",
-    "README.md",
-    "000 Pinned/📋 Tasks Dashboard.md",
-    "Tasks/General Tasks.md",
-    "Journal/2024/2024-Q1/February, 2024/2024-W09/2024-02-29.md",
-    "Tasks/Untitled.md",
-    "Excalidraw/Drawing 2024-02-27 21.22.49.excalidraw.md",
-    "Maths/🔢 Dummy Maths Note.md",
-    "001 Goals/Get Better.md",
-    "Attachments/section formula proof.png",
-    "Journal/2024/2024-Q1/February, 2024/2024-W09/2024-02-28.md",
-    "Attachments/distance formula.png",
-    "001 Goals/Dummy Goal.md",
     "Journal/🗓️ Journal.md",
-    "👤 Personal.md",
-    "💼 Productivity.md",
-    "Journal/2024/2024-Q1/February, 2024/February, 2024.md",
-    "Journal/2024/2024-Q1/2024-Q1.md",
+    "000 Pinned/🏠 Homepage.md",
+    "Templates/Journals/Daily Note Template.md",
+    "Templates/Journals/Weekly Note Template.md",
+    "Templates/Journals/Quarterly Note Template.md",
     "Journal/2024/2024.md",
+    "Journal/2024/2024-Q1/March, 2024/2024-W10/2024-03-05.md",
+    "Journal/2024/2024-Q1/2024-Q1.md",
+    "Journal/2024/2024-Q1/February, 2024/February, 2024.md",
+    "Journal/2024/2024-Q1/March, 2024/March, 2024.md",
     "Journal/2024/2024-Q1/February, 2024/2024-W09/2024-W09.md",
-    "000 Pinned/🗄️ Goals Dashboard.md",
-    "000 Pinned/🗓️ Tasks Calendar.md",
+    "Journal/2024/2024-Q1/March, 2024/2024-W10/2024-W10.md",
+    "Tasks/TODO.md",
+    "000 Pinned/📋 Tasks Dashboard.md",
+    "Random Jots/000 Quick Notes/2024-03-05 21-17.md",
+    "Random Jots/000 Quick Notes",
+    "🙃 Sidebar.md",
     "Journal/2024/2024-Q1/February, 2024/2024-W09/2024-02-27.md",
-    "2024-02-28.md",
-    "Journal/2024-02-28.md",
+    "Journal/2024/2024-Q1/March, 2024/2024-W09/2024-03-02.md",
+    "Journal/2024/2024-Q1/March, 2024/2024-W09/2024-03-03.md",
+    "Journal/2024/2024-Q1/March, 2024/2024-W10/2024-03-04.md",
+    "Journal/2024/2024-Q1/March, 2024/2024-W09/2024-03-01.md",
+    "Journal/2024/2024-Q1/February, 2024/2024-W09/2024-02-29.md",
+    "👤 Personal.md",
+    "Random Jots/Untitled.md",
+    "Untitled.md",
+    "Random Jots",
+    "🛠️ Practice.md",
+    "Journal/2024/2024-Q1/March, 2024/2024-W10",
+    "Stop Procrastinating.pdf",
+    "Journal/2024/2024-Q1/March, 2024/2024-W09",
+    "Journal/2024/2024-Q1/March, 2024",
+    "Attachments/section formula proof.png",
+    "Attachments/distance formula.png",
     "Tasks",
     "Scripts/dvScripts/taskido/view.js",
     "Scripts/dvScripts/taskido/view.css",
-    "Templates/Journals/Daily Note Template.md",
     "Excalidraw",
-    "Journal/2024/2024-Q1/February, 2024/2024-W09",
     "qr.png",
-    "Attachments",
-    "Maths",
-    "Journal/2024/2024-Q1/February, 2024/2024-W07",
-    "Journal/2024/2024-Q1/February, 2024",
-    "Journal/2024/2024-Q1",
     "Pasted image 20240212222426.png",
     "Pasted image 20240206143632.png"
   ]

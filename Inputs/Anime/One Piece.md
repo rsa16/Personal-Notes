@@ -448,9 +448,9 @@ longupinfo:
   trailer: https://www.youtube.com/watch?v=-tviZNY6CSw
 onlineRating: PG-13 - Teens 13 or older
 onlineScore: 8.72
-scoredBy: 1313320
-favorites: 216515
-members: 2315193
+scoredBy: 1317261
+favorites: 217262
+members: 2321777
 popularity: 19
 rank: 50
 url: https://myanimelist.net/anime/21/One_Piece

@@ -6,5 +6,5 @@ tags:
   - favorite
 ---
 ```dataviewjs
-await dv.view("Scripts/dvScripts/taskido", {pages: "", dailyNoteFolder: "Tasks/"})
+await dv.view("Scripts/dvScripts/taskido", {pages: "#task", dailyNoteFolder: "Tasks/"})
 ```

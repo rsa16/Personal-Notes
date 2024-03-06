@@ -1,6 +1,0 @@
-- [x] ⏫ 📅 2024-02-29 🛫 2024-02-28 History Poster ✅ 2024-02-29
-	- Meet up with Joshua and Evan if possible
-- [x] 🔼 📅 2024-02-29 🛫 2024-02-29 Choir Listening ✅ 2024-02-28
-- [ ] 🔽 📅 2024-03-03 🛫 2024-02-29 Get back to Kavi on fic changes
-- [x] 🔽 Science Pages (Make sure done) ✅ 2024-02-28
-- [ ] 🔼 📅 2024-03-01 🛫 2024-02-29 Memorize lines for ODOM

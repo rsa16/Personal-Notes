@@ -1,0 +1,7 @@
+{
+  "spotifyClientId": "0c59a88868eb42bf896a25a554a6f152",
+  "spotifyClientSecret": "b4945ad54d5b449d8c808a4e5f172467",
+  "spotifyScopes": "user-read-currently-playing",
+  "spotifyState": "it-can-be-anything",
+  "templates": []
+}
