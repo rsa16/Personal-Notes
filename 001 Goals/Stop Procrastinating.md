@@ -3,7 +3,7 @@ created_at: 2024-03-02T18:43:51-05:00
 noteType: goal
 area: Procrastination
 tags: goal
-progress: 15
+progress: 25
 target: 100
 startDate: 2024-03-03
 deadline: 2024-03-30

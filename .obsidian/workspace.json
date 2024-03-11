@@ -8,20 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "54cbcd1e8ecf477f",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "cb18cc093fe3000b",
+            "id": "736b63c2788db7ad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Journal/2024/2024.md",
+                "file": "000 Pinned/🏠 Homepage.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": false
@@ -29,13 +21,13 @@
             }
           },
           {
-            "id": "b96d6293a39b4b88",
+            "id": "24be6b8fb52692c2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tasks/TODO.md",
-                "mode": "source",
+                "file": "000 Pinned/📋 Tasks Dashboard.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": false
               }
@@ -87,7 +79,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -133,7 +125,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Journal/2024/2024.md",
+                "file": "000 Pinned/📋 Tasks Dashboard.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -156,7 +148,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.6564382658082918,
+                  "scale": 0.4682213077274844,
                   "close": true
                 }
               }
@@ -168,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Journal/2024/2024.md",
+                "file": "000 Pinned/📋 Tasks Dashboard.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -196,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Journal/2024/2024.md",
+                "file": "000 Pinned/📋 Tasks Dashboard.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -207,6 +199,14 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "2a68043f8ce3b063",
+            "type": "leaf",
+            "state": {
+              "type": "timeline",
               "state": {}
             }
           }
@@ -223,7 +223,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Journal/2024/2024.md"
+                "file": "000 Pinned/📋 Tasks Dashboard.md"
               }
             }
           },
@@ -233,7 +233,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Journal/2024/2024.md"
+                "file": "000 Pinned/📋 Tasks Dashboard.md"
               }
             }
           },
@@ -250,7 +250,7 @@
             }
           },
           {
-            "id": "35a2946937832701",
+            "id": "da6c5893ff72fe39",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -269,7 +269,6 @@
       "switcher:Open quick switcher": false,
       "homepage:Open homepage": false,
       "periodic-notes:Open today": false,
-      "obsidian-day-planner:Timeline": false,
       "graph:Open graph view": false,
       "templater-obsidian:Templater": false,
       "command-palette:Open command palette": false,
@@ -280,39 +279,40 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian42-brat:BRAT": false,
-      "spotify-link:Connect Spotify": false
+      "spotify-link:Connect Spotify": false,
+      "obsidian-day-planner:Timeline": false
     }
   },
-  "active": "cb18cc093fe3000b",
+  "active": "24be6b8fb52692c2",
   "lastOpenFiles": [
-    "Journal/🗓️ Journal.md",
-    "000 Pinned/🏠 Homepage.md",
-    "Templates/Journals/Daily Note Template.md",
-    "Templates/Journals/Weekly Note Template.md",
-    "Templates/Journals/Quarterly Note Template.md",
-    "Journal/2024/2024.md",
-    "Journal/2024/2024-Q1/March, 2024/2024-W10/2024-03-05.md",
-    "Journal/2024/2024-Q1/2024-Q1.md",
-    "Journal/2024/2024-Q1/February, 2024/February, 2024.md",
-    "Journal/2024/2024-Q1/March, 2024/March, 2024.md",
-    "Journal/2024/2024-Q1/February, 2024/2024-W09/2024-W09.md",
-    "Journal/2024/2024-Q1/March, 2024/2024-W10/2024-W10.md",
     "Tasks/TODO.md",
     "000 Pinned/📋 Tasks Dashboard.md",
+    "000 Pinned/🗓️ Tasks Calendar.md",
+    "Journal/2024-03-10.md",
+    "Random Jots/2024-03-10.md",
+    "000 Pinned/🏠 Homepage.md",
+    "001 Goals/Stop Procrastinating.md",
+    "000 Pinned/🗄️ Goals Dashboard.md",
+    "Random Jots/000 Quick Notes/2024-03-10 12-48.md",
     "Random Jots/000 Quick Notes/2024-03-05 21-17.md",
-    "Random Jots/000 Quick Notes",
-    "🙃 Sidebar.md",
-    "Journal/2024/2024-Q1/February, 2024/2024-W09/2024-02-27.md",
-    "Journal/2024/2024-Q1/March, 2024/2024-W09/2024-03-02.md",
+    "Random Jots/000 Quick Notes/2024-03-10 12-47 6.md",
+    "Random Jots/000 Quick Notes/2024-03-10 12-47 5.md",
+    "Random Jots/000 Quick Notes/2024-03-10 12-47 4.md",
+    "Random Jots/000 Quick Notes/2024-03-10 12-47 3.md",
+    "Random Jots/000 Quick Notes/2024-03-10 12-47 2.md",
+    "Random Jots/000 Quick Notes/2024-03-10 12-47 1.md",
+    "Random Jots/000 Quick Notes/2024-03-10 12-47.md",
+    "Random Jots/Priori.md",
+    "🧠 Excalibrain.md",
+    "🧰 Utilities.md",
+    "Random Jots/Project Plan.md",
+    "Journal/2024/2024-Q1/March, 2024/2024-W10/2024-03-09.md",
     "Journal/2024/2024-Q1/March, 2024/2024-W09/2024-03-03.md",
-    "Journal/2024/2024-Q1/March, 2024/2024-W10/2024-03-04.md",
+    "Journal/2024/2024-Q1/March, 2024/2024-W09/2024-03-02.md",
     "Journal/2024/2024-Q1/March, 2024/2024-W09/2024-03-01.md",
     "Journal/2024/2024-Q1/February, 2024/2024-W09/2024-02-29.md",
-    "👤 Personal.md",
-    "Random Jots/Untitled.md",
-    "Untitled.md",
+    "Random Jots/000 Quick Notes",
     "Random Jots",
-    "🛠️ Practice.md",
     "Journal/2024/2024-Q1/March, 2024/2024-W10",
     "Stop Procrastinating.pdf",
     "Journal/2024/2024-Q1/March, 2024/2024-W09",
