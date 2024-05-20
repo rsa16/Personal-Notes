@@ -46,62 +46,176 @@ function millisToMinutesAndSeconds(millis) {
   }
   return minutes + "m:" + (seconds < 10 ? "0" : "") + seconds + "s";
 }
+function millisToSeconds(millis) {
+  return (millis / 1e3).toFixed(0);
+}
+
+// src/episode.ts
+function isEpisode(data) {
+  return data.item.type === "episode";
+}
+function getEpisodeMessageTimestamp(data) {
+  if (!isEpisode(data))
+    throw new Error("Not an episode.");
+  const episode = data.item;
+  const episode_name = episode == null ? void 0 : episode.name;
+  const description = episode == null ? void 0 : episode.description;
+  const release_date = episode == null ? void 0 : episode.release_date;
+  const progress = data.progress_ms;
+  const duration = episode.duration_ms;
+  const url = episode.external_urls.spotify;
+  return `['**${episode_name}**': ***${description}***, released ${release_date} | **${millisToMinutesAndSeconds(
+    progress
+  )}** (${(progress / duration * 100).toFixed(0)}%)](${url})`;
+}
+function getEpisodeMessage(data, template) {
+  var _a, _b, _c, _d, _e;
+  if (!isEpisode(data))
+    throw new Error("Not an episode.");
+  const episode = data.item;
+  const progressInMilliseconds = data.progress_ms.toFixed(0);
+  const progressInSeconds = millisToSeconds(data.progress_ms);
+  const progressInMinutesAndSeconds = millisToMinutesAndSeconds(
+    data.progress_ms
+  );
+  return template.replace(/{{ episode_name }}|{{episode_name}}/g, episode.name).replace(
+    /{{ episode_link }}|{{episode_link}}/g,
+    episode.external_urls.spotify
+  ).replace(
+    /{{ description }}|{{description}}|{{ description\[(\d+)\] }}|{{description\[(\d+)\]}}/g,
+    (_, len) => {
+      let parsed_len = len;
+      if (parseInt(len) > episode.description.length || isNaN(len))
+        parsed_len = episode.description.length;
+      return `${episode.description.slice(0, parsed_len)}${episode.description.length != parsed_len ? "..." : ""}`;
+    }
+  ).replace(
+    /{{ duration_ms }}|{{duration_ms}}/g,
+    episode.duration_ms.toString()
+  ).replace(
+    /{{ audio_preview_url }}|{{audio_preview_url}}/g,
+    `![Audio preview url](${episode.audio_preview_url})`
+  ).replace(
+    /{{ episode_cover_large }}|{{episode_cover_large}}/g,
+    `![${episode.name}](${(_a = episode.images[0]) == null ? void 0 : _a.url})`
+  ).replace(
+    /{{ episode_cover_medium }}|{{episode_cover_medium}}/g,
+    `![${episode.name}](${(_b = episode.images[1]) == null ? void 0 : _b.url})`
+  ).replace(
+    /{{ episode_cover_small }}|{{episode_cover_small}}/g,
+    `![${episode.name}](${(_c = episode.images[2]) == null ? void 0 : _c.url})`
+  ).replace(
+    /{{ episode_cover_link_large }}|{{episode_cover_link_large}}/g,
+    episode.images[0].url
+  ).replace(
+    /{{ episode_cover_link_medium }}|{{episode_cover_link_medium}}/g,
+    (_d = episode.images[1]) == null ? void 0 : _d.url
+  ).replace(
+    /{{ episode_cover_link_small }}|{{episode_cover_link_small}}/g,
+    (_e = episode.images[2]) == null ? void 0 : _e.url
+  ).replace(/{{ release_date }}|{{release_date}}/g, episode.release_date).replace(/{{ show_name }}|{{show_name}}/g, episode.show.name).replace(/{{ publisher }}|{{publisher}}/g, episode.show.publisher).replace(
+    /{{ show_description }}|{{show_description}}/g,
+    episode.show.description
+  ).replace(
+    /{{ show_link }}|{{show_link}}/g,
+    episode.show.external_urls.spotify
+  ).replace(
+    /{{ total_episodes }}|{{total_episodes}}/g,
+    episode.show.total_episodes.toString()
+  ).replace(/{{ progress_ms }}|{{progress_ms}}/g, progressInMilliseconds).replace(/{{ progress_sec }}|{{progress_sec}}/g, progressInSeconds).replace(
+    /{{ progress_min_sec }}|{{progress_min_sec}}/g,
+    progressInMinutesAndSeconds
+  ).replace(
+    /{{ timestamp }}|{{timestamp}}/g,
+    `${new Date().toDateString()} - ${new Date().toLocaleTimeString()}`
+  );
+}
+
+// src/track.ts
+function getTrackType(data) {
+  return data.currently_playing_type;
+}
+function isTrack(data) {
+  return data.item.type === "track";
+}
+function getTrackMessageTimestamp(data) {
+  if (!isTrack(data))
+    throw new Error("Not a track.");
+  const track = data.item;
+  const song_name = (track == null ? void 0 : track.name) || "Error: Song name unavailable";
+  const artists = (track == null ? void 0 : track.artists) || [];
+  const progress = data.progress_ms;
+  const duration = parseInt(track.duration_ms);
+  const url = track.external_urls.spotify;
+  return `['**${song_name}**' by ***${artists.map((a) => (a == null ? void 0 : a.name) || "Unknown").join(", ")}*** **${millisToMinutesAndSeconds(progress)}** (${(progress / duration * 100).toFixed(0)}%)](${url})`;
+}
+function getTrackMessage(data, template) {
+  var _a, _b, _c, _d;
+  if (!isTrack(data))
+    throw new Error("Not a track.");
+  const track = data.item;
+  return template.replace(/{{ song_name }}|{{song_name}}/g, track.name).replace(/{{ song_link }}|{{song_link}}/g, track.external_urls.spotify).replace(
+    /{{ artists }}|{{artist}}/g,
+    track.artists.map((a) => a.name).join(", ")
+  ).replace(
+    /{{ album_release }}|{{album_release}}/g,
+    track.album.release_date
+  ).replace(
+    /{{ album_cover_large }}|{{album_cover_large}}/g,
+    `![${track.album.name}](${track.album.images[0].url})`
+  ).replace(
+    /{{ album_cover_medium }}|{{album_cover_medium}}/g,
+    `![${track.album.name}](${(_a = track.album.images[1]) == null ? void 0 : _a.url})`
+  ).replace(
+    /{{ album_cover_small }}|{{album_cover_small}}/g,
+    `![${track.album.name}](${(_b = track.album.images[2]) == null ? void 0 : _b.url})`
+  ).replace(
+    /{{ album_cover_link_large }}|{{album_cover_link_large}}/g,
+    track.album.images[0].url
+  ).replace(
+    /{{ album_cover_link_medium }}|{{album_cover_link_medium}}/g,
+    (_c = track.album.images[1]) == null ? void 0 : _c.url
+  ).replace(
+    /{{ album_cover_link_small }}|{{album_cover_link_small}}/g,
+    (_d = track.album.images[2]) == null ? void 0 : _d.url
+  ).replace(
+    /{{ album_link }}|{{album_link}}/g,
+    track.album.external_urls.spotify
+  ).replace(/{{ album }}|{{album}}/g, track.album.name).replace(
+    /{{ timestamp }}|{{timestamp}}/g,
+    `${new Date().toDateString()} - ${new Date().toLocaleTimeString()}`
+  );
+}
 
 // src/output.ts
 function processCurrentlyPlayingTrackInput(data) {
-  let message = "";
   if (data && data.is_playing) {
-    message = `['**${data.item.name}**' by ***${data.item.artists.map((a) => a.name).join(", ")}*** **${millisToMinutesAndSeconds(
-      data.progress_ms
-    )}** (${(data.progress_ms / parseInt(data.item.duration_ms) * 100).toFixed(0)}%)](${data.item.external_urls.spotify})`;
-  } else {
-    message = "No song is playing.";
+    if (getTrackType(data) === "track") {
+      return getTrackMessageTimestamp(data);
+    }
+    if (getTrackType(data) === "episode") {
+      return getEpisodeMessageTimestamp(data);
+    }
+    throw new Error(
+      "The data received is not handle. You can request it by opening a GitHub issue and providing the track URL so that I can adjust the tool accordingly."
+    );
   }
-  return message;
+  return "No song is playing.";
 }
 function processCurrentlyPlayingTrack(data, template = `'{{ song_name }}' by {{ artists }} from {{ album }} released in {{ album_release }}
 {{ timestamp }}`) {
-  var _a, _b, _c, _d;
-  let message = "";
   if (data && data.is_playing) {
-    message = template.replace(/{{ song_name }}|{{song_name}}/g, data.item.name).replace(
-      /{{ song_link }}|{{song_link}}/g,
-      data.item.external_urls.spotify
-    ).replace(
-      /{{ artists }}|{{artist}}/g,
-      data.item.artists.map((a) => a.name).join(", ")
-    ).replace(
-      /{{ album_release }}|{{album_release}}/g,
-      data.item.album.release_date
-    ).replace(
-      /{{ album_cover_large }}|{{album_cover_large}}/g,
-      `![${data.item.album.name}](${data.item.album.images[0].url})`
-    ).replace(
-      /{{ album_cover_medium }}|{{album_cover_medium}}/g,
-      `![${data.item.album.name}](${(_a = data.item.album.images[1]) == null ? void 0 : _a.url})`
-    ).replace(
-      /{{ album_cover_small }}|{{album_cover_small}}/g,
-      `![${data.item.album.name}](${(_b = data.item.album.images[2]) == null ? void 0 : _b.url})`
-    ).replace(
-      /{{ album_cover_link_large }}|{{album_cover_link_large}}/g,
-      data.item.album.images[0].url
-    ).replace(
-      /{{ album_cover_link_medium }}|{{album_cover_link_medium}}/g,
-      (_c = data.item.album.images[1]) == null ? void 0 : _c.url
-    ).replace(
-      /{{ album_cover_link_small }}|{{album_cover_link_small}}/g,
-      (_d = data.item.album.images[2]) == null ? void 0 : _d.url
-    ).replace(
-      /{{ album_link }}|{{album_link}}/g,
-      data.item.album.external_urls.spotify
-    ).replace(/{{ album }}|{{album}}/g, data.item.album.name).replace(
-      /{{ timestamp }}|{{timestamp}}/g,
-      `${new Date().toDateString()} - ${new Date().toLocaleTimeString()}`
+    if (getTrackType(data) === "track") {
+      return getTrackMessage(data, template);
+    }
+    if (getTrackType(data) === "episode") {
+      return getEpisodeMessage(data, template);
+    }
+    throw new Error(
+      "The data received is not handle. You can request it by opening a GitHub issue and providing the track URL so that I can adjust the tool accordingly."
     );
-  } else {
-    message = "No song is playing.";
   }
-  return message;
+  return "No song is playing.";
 }
 
 // src/api.ts
@@ -183,7 +297,7 @@ async function getCurrentlyPlayingTrack(clientId, clientSecret) {
   const token = await getAccessToken(clientId, clientSecret);
   try {
     const response = await (0, import_obsidian.requestUrl)({
-      url: `${SPOTIFY_API_BASE_ADDRESS}/me/player/currently-playing`,
+      url: `${SPOTIFY_API_BASE_ADDRESS}/me/player/currently-playing?additional_types=track,episode`,
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`
@@ -250,13 +364,6 @@ function getRefreshToken() {
 
 // src/settingsTab.ts
 var import_obsidian2 = require("obsidian");
-var DEFAULT_SETTINGS = {
-  spotifyClientId: "",
-  spotifyClientSecret: "",
-  spotifyScopes: "user-read-currently-playing",
-  spotifyState: "it-can-be-anything",
-  templates: []
-};
 var SettingsTab = class extends import_obsidian2.PluginSettingTab {
   constructor(app, plugin) {
     super(app, plugin);
@@ -312,15 +419,27 @@ var SettingsTab = class extends import_obsidian2.PluginSettingTab {
       href: "https://studiowebux.github.io/obsidian-plugins-docs/docs/spotify-link/custom-template",
       text: "Custom Template Documentation"
     });
-    divDoc.createEl("p", { text: "Available variables:" });
+    divDoc.createEl("p", { text: "Available variables (song):" });
     divDoc.createEl("ul").createEl("li", { text: "{{ album }}" }).createEl("li", { text: "{{ album_release }}" }).createEl("li", { text: "{{ album_cover_large }}" }).createEl("li", { text: "{{ album_cover_medium }}" }).createEl("li", { text: "{{ album_cover_small }}" }).createEl("li", { text: "{{ album_cover_link_large }}" }).createEl("li", { text: "{{ album_cover_link_medium }}" }).createEl("li", { text: "{{ album_cover_link_small }}" }).createEl("li", { text: "{{ album_link }}" }).createEl("li", { text: "{{ artists }}" }).createEl("li", { text: "{{ song_name }}" }).createEl("li", { text: "{{ song_link }}" }).createEl("li", { text: "{{ timestamp }}" });
-    new import_obsidian2.Setting(containerEl).setName("Template").setDesc(
-      "Define a custom template to print the currently playing song"
+    divDoc.createEl("p", { text: "Available variables (podcast):" });
+    divDoc.createEl("ul").createEl("li", { text: "{{ episode_name }}" }).createEl("li", { text: "{{ episode_link }}" }).createEl("li", { text: "{{ description }}" }).createEl("li", { text: "{{ duration_ms }}" }).createEl("li", { text: "{{ audio_preview_url }}" }).createEl("li", { text: "{{ episode_cover_large }}" }).createEl("li", { text: "{{ episode_cover_medium }}" }).createEl("li", { text: "{{ episode_cover_small }}" }).createEl("li", { text: "{{ episode_cover_link_large }}" }).createEl("li", { text: "{{ episode_cover_link_medium }}" }).createEl("li", { text: "{{ episode_cover_link_small }}" }).createEl("li", { text: "{{ release_date }}" }).createEl("li", { text: "{{ show_name }}" }).createEl("li", { text: "{{ publisher }}" }).createEl("li", { text: "{{ show_description }}" }).createEl("li", { text: "{{ show_link }}" }).createEl("li", { text: "{{ total_episodes }}" }).createEl("li", { text: "{{ progress_ms }}" }).createEl("li", { text: "{{ progress_sec }}" }).createEl("li", { text: "{{ progress_min_sec }}" }).createEl("li", { text: "{{ timestamp }}" });
+    new import_obsidian2.Setting(containerEl).setName("Template for song").setDesc(
+      "Define a custom template to print the currently playing song (Song only)"
     ).addTextArea(
       (text) => text.setPlaceholder(
         "Example: '{{ song_name }}' by {{ artists }} from {{ album }} released in {{ album_release }}\n{{ timestamp }}"
       ).setValue(this.plugin.settings.templates[0]).onChange(async (value) => {
         this.plugin.settings.templates[0] = value;
+        await this.plugin.saveSettings();
+      })
+    );
+    new import_obsidian2.Setting(containerEl).setName("Template for podcast").setDesc(
+      "Define a custom template to print the currently playing episode (Podcast only)"
+    ).addTextArea(
+      (text) => text.setPlaceholder(
+        "Example: '{{ podcast_name }}': {{ description }} released {{ release_date }}\n{{ timestamp }}"
+      ).setValue(this.plugin.settings.templates[1]).onChange(async (value) => {
+        this.plugin.settings.templates[1] = value;
         await this.plugin.saveSettings();
       })
     );
@@ -381,6 +500,18 @@ async function onAutoLogin(clientId, clientSecret) {
 function onLogin(clientId, state, scope) {
   window.open(generateLoginUrl(clientId, state, scope, REDIRECT_URI));
 }
+
+// src/default.ts
+var DEFAULT_SETTINGS = {
+  spotifyClientId: "",
+  spotifyClientSecret: "",
+  spotifyScopes: "user-read-currently-playing",
+  spotifyState: "it-can-be-anything",
+  templates: [
+    "**Song Name:** {{ song_name }}\n**Song URL:** {{ song_link }}\n**Album Name:** {{ album }}\n**Album Release Date:** {{ album_release }}\n**Album URL:** {{ album_link }}\n**Cover:** {{ album_cover_medium }}\n**Cover URL:** {{ album_cover_link_medium }}\n**Artists:** {{ artists }}\n**Added at:** *{{ timestamp }}*",
+    "**Episode Name:** {{ episode_name }}\n**Description:** {{ description }}\n**Added at:** *{{ timestamp }}*"
+  ]
+};
 
 // src/main.ts
 var SpotifyLinkPlugin = class extends import_obsidian4.Plugin {
@@ -447,6 +578,29 @@ var SpotifyLinkPlugin = class extends import_obsidian4.Plugin {
         }
       }
     );
+    this.addCommand({
+      id: "append-currently-playing-episode-using-template",
+      name: "Append Spotify currently playing episode using template",
+      editorCallback: async (editor) => {
+        await handleTemplateEditor(
+          editor,
+          this.settings.templates[1],
+          this.settings.spotifyClientId,
+          this.settings.spotifyClientSecret
+        );
+      }
+    });
+    this.addCommand({
+      id: "append-currently-playing-episode",
+      name: "Append Spotify currently playing episode with timestamp",
+      editorCallback: async (editor) => {
+        await handleEditor(
+          editor,
+          this.settings.spotifyClientId,
+          this.settings.spotifyClientSecret
+        );
+      }
+    });
     this.addCommand({
       id: "append-currently-playing-track-using-template",
       name: "Append Spotify currently playing track using template",

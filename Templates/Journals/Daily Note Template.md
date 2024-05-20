@@ -24,6 +24,10 @@ date: <% tp.file.title %>
 
 ---
 # `=this.aliases`
+### 
+
+### Daily Schedule
+### Currently Listening To:
 ## Info
 
 > [!todo]- Study
@@ -56,4 +60,3 @@ date: <% tp.file.title %>
 *Rehan Ali*
 
 ---
-

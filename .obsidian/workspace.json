@@ -8,12 +8,25 @@
         "type": "tabs",
         "children": [
           {
-            "id": "736b63c2788db7ad",
+            "id": "059601fb19fb296c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "000 Pinned/🏠 Homepage.md",
+                "file": "Random Jots/Freestyle Lyrics.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d24254c06b2e8eb3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Journal/2024/2024-Q2/April, 2024/2024-W14/2024-04-03.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": false
@@ -21,20 +34,75 @@
             }
           },
           {
-            "id": "24be6b8fb52692c2",
+            "id": "216321f7b2fba7c8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "000 Pinned/📋 Tasks Dashboard.md",
+                "file": "Random Jots/Laptop Choices.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": false
               }
             }
+          },
+          {
+            "id": "68833d5f8e1bafc2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Random Jots/Minecraft Mods.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "17d5a7fa1876e8f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Random Jots/Freestyle Lyrics 2.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "434669ef46037ec0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Random Jots/Freestyle 3.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8a8ba1a282e284f6",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "8b80f1d7c1a7c199",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -117,50 +185,34 @@
       {
         "id": "94d82477d3b81bc5",
         "type": "tabs",
-        "dimension": 47.3756906077348,
+        "dimension": 51.29482071713147,
         "children": [
           {
-            "id": "bd6a57dbcaf2daa5",
+            "id": "2c1821f8307a810d",
             "type": "leaf",
             "state": {
-              "type": "localgraph",
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "39a76bde5f566225",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
               "state": {
-                "file": "000 Pinned/📋 Tasks Dashboard.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": true,
-                  "showTags": true,
-                  "showAttachments": true,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": true,
-                  "textFadeMultiplier": -0.8,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.4682213077274844,
-                  "close": true
-                }
+                "sortOrder": "frequency",
+                "useHierarchy": false
               }
             }
           },
           {
-            "id": "025438ed514a5daf",
+            "id": "07b383e0169b70fe",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "000 Pinned/📋 Tasks Dashboard.md",
+                "file": "Random Jots/Laptop Choices.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -172,38 +224,19 @@
             }
           },
           {
-            "id": "39a76bde5f566225",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              }
-            }
-          },
-          {
-            "id": "486fdb2f39f9ba2c",
+            "id": "5c871de2ad6f4b7b",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "000 Pinned/📋 Tasks Dashboard.md",
+                "file": "Random Jots/Laptop Choices.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "20d6e82b916748de",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
-          },
-          {
-            "id": "2a68043f8ce3b063",
+            "id": "75f2d6dc557e7d58",
             "type": "leaf",
             "state": {
               "type": "timeline",
@@ -215,7 +248,7 @@
       {
         "id": "b41efa34f62597d2",
         "type": "tabs",
-        "dimension": 52.62430939226519,
+        "dimension": 48.70517928286853,
         "children": [
           {
             "id": "e75b94f8566f2d9a",
@@ -223,7 +256,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "000 Pinned/📋 Tasks Dashboard.md"
+                "file": "Random Jots/Laptop Choices.md"
               }
             }
           },
@@ -233,7 +266,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "000 Pinned/📋 Tasks Dashboard.md"
+                "file": "Random Jots/Laptop Choices.md"
               }
             }
           },
@@ -262,67 +295,68 @@
       }
     ],
     "direction": "horizontal",
-    "width": 363.5
+    "width": 361.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
       "homepage:Open homepage": false,
-      "periodic-notes:Open today": false,
-      "graph:Open graph view": false,
       "templater-obsidian:Templater": false,
+      "graph:Open graph view": false,
+      "switcher:Open quick switcher": false,
       "command-palette:Open command palette": false,
       "workspaces:Manage workspace layouts": false,
       "dbfolder:Create a new database table": false,
-      "obsidian-projects:Open projects": false,
       "obsidian-trash-explorer:Open trash explorer": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-day-planner:Timeline": false,
+      "obsidian-projects:Open projects": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian42-brat:BRAT": false,
       "spotify-link:Connect Spotify": false,
-      "obsidian-day-planner:Timeline": false
+      "periodic-notes:Open today": false
     }
   },
-  "active": "24be6b8fb52692c2",
+  "active": "216321f7b2fba7c8",
   "lastOpenFiles": [
-    "Tasks/TODO.md",
-    "000 Pinned/📋 Tasks Dashboard.md",
-    "000 Pinned/🗓️ Tasks Calendar.md",
-    "Journal/2024-03-10.md",
-    "Random Jots/2024-03-10.md",
+    "Random Jots/Freestyle 3.md",
+    "Random Jots/Laptop Choices.md",
+    "Journal/2024/2024-Q2/April, 2024/2024-W14/2024-04-03.md",
+    "Journal/2024/2024-Q2/April, 2024/April, 2024.md",
     "000 Pinned/🏠 Homepage.md",
-    "001 Goals/Stop Procrastinating.md",
-    "000 Pinned/🗄️ Goals Dashboard.md",
-    "Random Jots/000 Quick Notes/2024-03-10 12-48.md",
-    "Random Jots/000 Quick Notes/2024-03-05 21-17.md",
-    "Random Jots/000 Quick Notes/2024-03-10 12-47 6.md",
-    "Random Jots/000 Quick Notes/2024-03-10 12-47 5.md",
-    "Random Jots/000 Quick Notes/2024-03-10 12-47 4.md",
-    "Random Jots/000 Quick Notes/2024-03-10 12-47 3.md",
-    "Random Jots/000 Quick Notes/2024-03-10 12-47 2.md",
-    "Random Jots/000 Quick Notes/2024-03-10 12-47 1.md",
-    "Random Jots/000 Quick Notes/2024-03-10 12-47.md",
-    "Random Jots/Priori.md",
-    "🧠 Excalibrain.md",
-    "🧰 Utilities.md",
+    "Random Jots/Freestyle Lyrics.md",
+    "Random Jots/Freestyle Lyrics 2.md",
+    "Random Jots/Minecraft Mods.md",
+    "Random Jots/Project Ideas.md",
+    "Random Jots/000 Quick Notes/2024-04-23 16-16.md",
+    "Random Jots/Slide Plan.md",
     "Random Jots/Project Plan.md",
-    "Journal/2024/2024-Q1/March, 2024/2024-W10/2024-03-09.md",
-    "Journal/2024/2024-Q1/March, 2024/2024-W09/2024-03-03.md",
-    "Journal/2024/2024-Q1/March, 2024/2024-W09/2024-03-02.md",
-    "Journal/2024/2024-Q1/March, 2024/2024-W09/2024-03-01.md",
-    "Journal/2024/2024-Q1/February, 2024/2024-W09/2024-02-29.md",
+    "Random Jots/Untitled 1.md",
+    "Tasks/TODO.md",
+    "Journal/2024/2024-Q2/April, 2024/2024-W14/2024-W14.md",
+    "Journal/2024/2024-Q2/April, 2024/2024-W14/2024-04-02.md",
+    "000 Pinned/📋 Tasks Dashboard.md",
+    "Random Jots/Movies I Should Watch.md",
+    "Tasks/Archived Todo.md",
+    "Journal/2024/2024-Q2/2024-Q2.md",
+    "Journal/2024/2024.md",
+    "Random Jots/2024-Q2.md",
+    "Journal/2024/2024-Q1/2024-Q1.md",
+    "Journal/2024/2024-Q2/April, 2024/2024-W14",
+    "Journal/2024/2024-Q2/April, 2024",
+    "Journal/2024/2024-Q2",
+    "Journal/2024/2024-Q1/March, 2024/2024-W11/2024-03-16.md",
+    "Random Jots/OM Outline.md",
+    "001 Goals.md",
+    "Calendar",
+    "Journal/2024/2024-Q1/March, 2024/2024-W11",
     "Random Jots/000 Quick Notes",
     "Random Jots",
     "Journal/2024/2024-Q1/March, 2024/2024-W10",
     "Stop Procrastinating.pdf",
     "Journal/2024/2024-Q1/March, 2024/2024-W09",
-    "Journal/2024/2024-Q1/March, 2024",
     "Attachments/section formula proof.png",
     "Attachments/distance formula.png",
-    "Tasks",
-    "Scripts/dvScripts/taskido/view.js",
-    "Scripts/dvScripts/taskido/view.css",
-    "Excalidraw",
     "qr.png",
     "Pasted image 20240212222426.png",
     "Pasted image 20240206143632.png"

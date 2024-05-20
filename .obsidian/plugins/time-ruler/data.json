@@ -1,0 +1,33 @@
+{
+  "calendars": [],
+  "fieldFormat": "dataview",
+  "muted": false,
+  "timerEvent": "notification",
+  "inbox": null,
+  "search": "",
+  "taskSearch": "",
+  "fileOrder": [
+    "001 Goals",
+    "001 Goals.md",
+    "Journal/2024/2024-Q1/March, 2024/2024-W09/2024-03-03.md",
+    "README.md",
+    "Tasks/TODO.md"
+  ],
+  "customStatus": {
+    "include": false,
+    "statuses": "-"
+  },
+  "showCompleted": false,
+  "groupBy": "path",
+  "dayStartEnd": [
+    10,
+    22
+  ],
+  "twentyFourHourFormat": false,
+  "filterFunction": "",
+  "addTaskToEnd": false,
+  "extendBlocks": true,
+  "hideTimes": false,
+  "borders": true,
+  "viewMode": "day"
+}
